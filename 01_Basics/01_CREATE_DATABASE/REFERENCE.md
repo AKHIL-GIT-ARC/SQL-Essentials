@@ -11,11 +11,8 @@ Once created, the database becomes the foundation for storing and managing appli
 ## Category
 
 **DDL (Data Definition Language)**
-
 DDL commands define or modify the structure of database objects.
-
 Other DDL commands include:
-
 - CREATE TABLE
 - ALTER
 - DROP
@@ -27,7 +24,6 @@ Other DDL commands include:
 ## Purpose
 
 The `CREATE DATABASE` command is used to:
-
 - Create a new database.
 - Organize application data separately.
 - Isolate projects or applications.
@@ -56,7 +52,6 @@ CREATE DATABASE database_name;
 ## Naming Rules
 
 A database name should:
-
 - Be meaningful.
 - Be unique on the database server.
 - Start with a letter (recommended).
@@ -90,7 +85,6 @@ company!
 ```sql
 CREATE DATABASE company;
 ```
-
 Creates a database named **company**.
 
 ---
@@ -100,7 +94,6 @@ Creates a database named **company**.
 ```sql
 CREATE DATABASE student_management;
 ```
-
 Creates a database named **student_management**.
 
 ---
@@ -141,15 +134,11 @@ A new database is empty until tables are created.
 ## SQLite Notes
 
 SQLite does **not** support the `CREATE DATABASE` SQL statement.
-
 A SQLite database is simply a file.
-
 Example:
-
 ```bash
 sqlite3 company.db
 ```
-
 If `company.db` does not exist, SQLite creates it automatically.
 
 ---
@@ -161,7 +150,6 @@ If `company.db` does not exist, SQLite creates it automatically.
 - Hospital Management System
 - Banking System
 - E-Commerce Platform
-
 Each application usually stores its data in its own database.
 
 ---
@@ -177,7 +165,6 @@ It is a DDL command used to create a new database.
 ### Is CREATE DATABASE supported in SQLite?
 
 No.
-
 SQLite creates a database automatically when a new `.db` file is opened.
 
 ---
@@ -185,7 +172,6 @@ SQLite creates a database automatically when a new `.db` file is opened.
 ### Can a database exist without tables?
 
 Yes.
-
 A newly created database is empty until tables are added.
 
 ---
